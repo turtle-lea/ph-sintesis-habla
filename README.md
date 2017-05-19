@@ -1,2 +1,2 @@
-TP procesamiento del habla
-El
+TP sintesis del habla
+Grupo: Leandro Matayoshi

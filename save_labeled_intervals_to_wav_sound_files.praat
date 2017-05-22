@@ -1,9 +1,3 @@
-# This script saves each interval in the selected IntervalTier of a TextGrid to a separate WAV sound file.
-# The source sound must be a Sound object, and both the TextGrid and 
-# the Sound must have identical names and they have to be selected 
-# before running the script.
-# Files are named with the corresponding interval labels (plus a running index number when necessary).
-#
 # NOTE: You have to take care yourself that the interval labels do not contain forbidden characters!!!!
 # 
 # This script is distributed under the GNU General Public License.
@@ -35,6 +29,10 @@ endform
 
 gridname$ = selected$ ("TextGrid", 1)
 soundname$ = selected$ ("Sound", 1)
+#Read from file: "ma.TextGrid"
+#Read from file: "ma.wav"
+#gridname$ = "ma"
+#soundname$ = "ma"
 select TextGrid 'gridname$'
 numberOfIntervals = Get number of intervals... tier
 if start_from > numberOfIntervals

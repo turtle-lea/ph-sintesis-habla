@@ -2,7 +2,7 @@ File type = "ooTextFile"
 Object class = "TextGrid"
 
 xmin = 0 
-xmax = 3.488375 
+xmax = 4.50725 
 tiers? <exists> 
 size = 3 
 item []: 
@@ -10,53 +10,53 @@ item []:
         class = "IntervalTier" 
         name = "Mary" 
         xmin = 0 
-        xmax = 3.488375 
+        xmax = 4.50725 
         intervals: size = 7 
         intervals [1]:
             xmin = 0 
-            xmax = 2.1509635733975365 
+            xmax = 2.185146672379103 
             text = "" 
         intervals [2]:
-            xmin = 2.1509635733975365 
-            xmax = 2.2250022166553056 
+            xmin = 2.185146672379103 
+            xmax = 2.201813235552807 
             text = "start" 
         intervals [3]:
-            xmin = 2.2250022166553056 
-            xmax = 2.3190312935926727 
+            xmin = 2.201813235552807 
+            xmax = 2.2508637488298717 
             text = "first" 
         intervals [4]:
-            xmin = 2.3190312935926727 
-            xmax = 2.4278680991815933 
+            xmin = 2.2508637488298717 
+            xmax = 2.3339914608046866 
             text = "second" 
         intervals [5]:
-            xmin = 2.4278680991815933 
-            xmax = 2.6754958599501912 
+            xmin = 2.3339914608046866 
+            xmax = 2.6321999201782695 
             text = "" 
         intervals [6]:
-            xmin = 2.6754958599501912 
-            xmax = 2.759168305050024 
+            xmin = 2.6321999201782695 
+            xmax = 2.679185148678129 
             text = "end" 
         intervals [7]:
-            xmin = 2.759168305050024 
-            xmax = 3.488375 
+            xmin = 2.679185148678129 
+            xmax = 4.50725 
             text = "" 
     item [2]:
         class = "IntervalTier" 
         name = "John" 
         xmin = 0 
-        xmax = 3.488375 
+        xmax = 4.50725 
         intervals: size = 1 
         intervals [1]:
             xmin = 0 
-            xmax = 3.488375 
+            xmax = 4.50725 
             text = "" 
     item [3]:
         class = "IntervalTier" 
         name = "bell" 
         xmin = 0 
-        xmax = 3.488375 
+        xmax = 4.50725 
         intervals: size = 1 
         intervals [1]:
             xmin = 0 
-            xmax = 3.488375 
+            xmax = 4.50725 
             text = "" 

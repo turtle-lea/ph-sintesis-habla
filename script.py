@@ -15,6 +15,8 @@ os.system("mkdir generated")
 os.system("mkdir generated/ka")
 os.system("mkdir generated/la")
 os.system("mkdir generated/ma")
+os.system("mkdir generated/pa")
+os.system("mkdir generated/sa")
 
 print "Done"
 

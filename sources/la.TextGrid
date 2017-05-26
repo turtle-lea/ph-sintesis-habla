@@ -11,7 +11,7 @@ item []:
         name = "Mary" 
         xmin = 0 
         xmax = 3.488375 
-        intervals: size = 7 
+        intervals: size = 5 
         intervals [1]:
             xmin = 0 
             xmax = 2.1509635733975365 
@@ -19,25 +19,17 @@ item []:
         intervals [2]:
             xmin = 2.1509635733975365 
             xmax = 2.2250022166553056 
-            text = "start" 
+            text = "_l" 
         intervals [3]:
             xmin = 2.2250022166553056 
             xmax = 2.3190312935926727 
-            text = "first" 
+            text = "la" 
         intervals [4]:
             xmin = 2.3190312935926727 
             xmax = 2.4278680991815933 
-            text = "second" 
+            text = "al" 
         intervals [5]:
             xmin = 2.4278680991815933 
-            xmax = 2.6754958599501912 
-            text = "" 
-        intervals [6]:
-            xmin = 2.6754958599501912 
-            xmax = 2.759168305050024 
-            text = "end" 
-        intervals [7]:
-            xmin = 2.759168305050024 
             xmax = 3.488375 
             text = "" 
     item [2]:

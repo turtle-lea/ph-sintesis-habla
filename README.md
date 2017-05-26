@@ -13,3 +13,7 @@ Read from file: "/Users/lmatayoshi/Desktop/audios/ma/ma.TextGrid"
 selectObject: "Sound pa"
 plusObject: "TextGrid ma"
 
+selectObject: "TextGrid ma"
+Save as text file: "/Users/lmatayoshi/Desktop/chain.TextGrid"
+
+

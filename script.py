@@ -22,6 +22,7 @@ param = sys.argv[1]
 entry = "_" + param + "_"
 praat_file = "praat_generated.praat"
 generated_audio_file = "generated_audio.wav"
+generated_textgrid_file = "generated_audio.TextGrid"
 
 def diphones(entry):
 	res = []
@@ -44,8 +45,14 @@ def concatenate_recoverably():
 def select_chain():
 	return "selectObject: \"Sound chain\" \n"
 
+def select_chain_textgrid():
+	return "selectObject: \"TextGrid chain\" \n"
+
 def write_to_wav_file(filename):
 	return "Write to WAV file... " + filename + "\n"
+
+def write_to_text_grid_file(filename):
+	return "Save as text file: \"" + filename + "\"" + "\n"
 
 def rename(index):
 	return "Rename: " + "\"" + str(index) + "\""
@@ -78,8 +85,26 @@ with open(praat_file, 'w') as f:
 
 	f.write(select_chain())
 	f.write(write_to_wav_file(generated_audio_file))
+	f.write(select_chain_textgrid())
+	f.write(write_to_text_grid_file(generated_textgrid_file))
+
+extraer_pitch_script = "extraer-pitch-track.praat"
+pitch_tier_file = "generated_audio.PitchTier"
 
 os.system("praat " + praat_file + " " + param)
+os.system("praat " + extraer_pitch_script + " " + generated_audio_file + " " + pitch_tier_file + " " + "50 300")
+filter_characters = "value ="
+
+values = []
+with open(pitch_tier_file, 'r') as f:
+	for line in f:
+		if 'value' in line:
+			value = line.translate(None, filter_characters)
+			values.append(float(value))
+
+print values
+print len(values)
+
 
 print diphones
 print "Done"
